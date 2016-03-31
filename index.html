@@ -3,11 +3,38 @@
 	<head>
 		<title>Infinite Mario - JavaScript</title>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <style type="text/css">
+
+                body {
+                background-color : #008f71 !important ;
+                background : url('https://glovoapp.com/images/recoverform/clouds_tile.png');
+                font-family : 'Montserrat', sans-serif ;
+
+                }
+                input, label {
+                display : block!important ;
+                }
+
+                #send button :hover {
+                background-color : #DAC059!important ;
+                }
+
+                @media only screen and (max-device-width :720px!important) {
+
+                #content {
+                margin : 0 10px !important ;
+                }
+
+                }
+
+                </style>
 	</head>
 	<body>
+        <div style="margin-top : 80px!important ; text-align: center!important ;">
 		<canvas id="canvas" width="640" height="480">
 			<p>Your browser does not support the canvas element.</p>
 		</canvas>
+        </div>
         
         <!-- Enjine Includes -->
         <script src="Enjine/core.js"></script>
