@@ -12,7 +12,7 @@ Mario.Enemy = function(world, x, y, dir, type, winged) {
     this.JumpTime = 0;
     this.XJumpSpeed = 0;
     this.YJumpSpeed = 0;
-    this.Width = 4;
+    this.Width = 14;
     this.Height = 24;
     this.DeadTime = 0;
     this.FlyDeath = false;
@@ -54,7 +54,7 @@ Mario.Enemy.prototype.CollideCheck = function() {
     
     var xMarioD = Mario.MarioCharacter.X - this.X, yMarioD = Mario.MarioCharacter.Y - this.Y;
         
-    if (xMarioD > -this.Width * 2 - 4 && xMarioD < this.Width * 2 + 4) {
+    if (xMarioD > -this.Width * 2 + 4 && xMarioD < this.Width * 2 - 4) {
         if (yMarioD > -this.Height && yMarioD < Mario.MarioCharacter.Height) {
             if (this.Type !== Mario.Enemy.Spiky && Mario.MarioCharacter.Ya > 0 && yMarioD <= 0 && (!Mario.MarioCharacter.OnGround || !Mario.MarioCharacter.WasOnGround)) {
                 Mario.MarioCharacter.Stomp(this);

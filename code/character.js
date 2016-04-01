@@ -89,6 +89,8 @@ Mario.Character.prototype.Initialize = function(world) {
 Mario.Character.prototype.SetLarge = function(large, fire) {
     if (fire) {
         large = true;
+        this.Width = 14;
+        this.XPicO = 16;
     }
     if (!large) {
         fire = false;
@@ -574,8 +576,12 @@ Mario.Character.prototype.GetHurt = function() {
         Enjine.Resources.PlaySound("powerdown");
         if (this.Fire) {
             this.SetLarge(true, false);
+            this.Width = 14;
+            this.XPicO = 16;
         } else {
             this.SetLarge(false, false);
+            this.Width = 4;
+            this.XPicO = 8;
         }
         this.InvulnerableTime = 32;
     } else {
@@ -608,6 +614,8 @@ Mario.Character.prototype.GetFlower = function() {
     if (!this.Fire) {
         this.World.Paused = true;
         this.PowerUpTime = 18;
+        this.Width = 14;
+        this.XPicO = 16;
         Enjine.Resources.PlaySound("powerup");
         this.SetLarge(true, true);
     } else {
@@ -624,6 +632,8 @@ Mario.Character.prototype.GetMushroom = function() {
     if (!this.Large) {
         this.World.Paused = true;
         this.PowerUpTime = 18;
+        this.Width = 14;
+        this.XPicO = 16;
         Enjine.Resources.PlaySound("powerup");
         this.SetLarge(true, false);
     } else {
