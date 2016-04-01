@@ -110,6 +110,7 @@ Mario.MapState.prototype.Enter = function() {
     this.LevelType = 0;
 	
 	//Mario.PlayMapMusic();
+    Enjine.Resources.PlaySound("neworder");
 };
 
 Mario.MapState.prototype.Exit = function() {

@@ -28,7 +28,7 @@ Mario.Enemy = function(world, x, y, dir, type, winged) {
     
     this.Image = Enjine.Resources.Images["enemies"];
     
-    this.XPicO = 8;
+    this.XPicO = 16;
     this.YPicO = 31;
     this.AvoidCliffs = this.Type === Mario.Enemy.RedKoopa;
     this.NoFireballDeath = this.Type === Mario.Enemy.Spiky;
@@ -42,7 +42,7 @@ Mario.Enemy = function(world, x, y, dir, type, winged) {
         this.Facing = 1;
     }
     
-    this.PicWidth = 16;
+    this.PicWidth = 32;
 };
 
 Mario.Enemy.prototype = new Mario.NotchSprite();

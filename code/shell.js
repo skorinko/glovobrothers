@@ -11,12 +11,12 @@ Mario.Shell = function(world, x, y, type) {
 	this.YPic = type;
 	this.Image = Enjine.Resources.Images["enemies"];
 	
-	this.XPicO = 8;
+	this.XPicO = 16;
 	this.YPicO = 31;
 	this.Width = 4;
 	this.Height = 12;
 	this.Facing = 0;
-	this.PicWidth = 16;
+	this.PicWidth = 32;
 	this.XPic = 4;
 	this.Ya = -5;
 	

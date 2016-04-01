@@ -72,6 +72,7 @@ Mario.LoadingState.prototype.Enter = function() {
 		    .AddSound("powerup", "sounds/powerup.mp3", 1)
 		    .AddSound("sprout", "sounds/sprout.mp3", 1)
 		    .AddSound("stagestart", "sounds/stagestart.mp3", 1)
+		    .AddSound("neworder", "sounds/neworder.mp3", 1)
 		    .AddSound("stomp", "sounds/stomp.mp3", 2);
     } else {
 	    Enjine.Resources.AddSound("1up", "sounds/1-up.wav", 1)
@@ -90,6 +91,7 @@ Mario.LoadingState.prototype.Enter = function() {
 		    .AddSound("powerup", "sounds/powerup.wav", 1)
 		    .AddSound("sprout", "sounds/sprout.wav", 1)
 		    .AddSound("stagestart", "sounds/stagestart.wav", 1)
+		    .AddSound("neworder", "sounds/neworder.wav", 1)
 		    .AddSound("stomp", "sounds/stomp.wav", 1);
     }
     
